@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Tarefa } from 'src/app/models/Tarefa';
 
 @Component({
   selector: 'app-lista-de-tarefas',
@@ -6,6 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lista-de-tarefas.component.css']
 })
 export class ListaDeTarefasComponent implements OnInit {
+
+    tarefas:Tarefa[] = [
+      {
+        tarefa:'Criar a primeira tarefa',
+        prioridade:1,
+        concluida:false
+
+      },
+      {
+        tarefa:'A primeira deu certo então',
+        prioridade:2,
+        concluida:true
+      },
+      {
+        tarefa:'Mais uma pra encher linguiça',
+        prioridade:3,
+        concluida:false
+      }
+    ];
 
   constructor() { }
 
