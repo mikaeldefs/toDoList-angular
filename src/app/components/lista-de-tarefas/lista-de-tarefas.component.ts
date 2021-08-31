@@ -7,8 +7,7 @@ import { Tarefa } from 'src/app/models/Tarefa';
   styleUrls: ['./lista-de-tarefas.component.css']
 })
 export class ListaDeTarefasComponent implements OnInit {
-
-    tarefas:Tarefa[] = [
+      tarefas:Tarefa[] = [
       {
         tarefa:'Criar a primeira tarefa',
         prioridade:1,
@@ -21,7 +20,7 @@ export class ListaDeTarefasComponent implements OnInit {
         concluida:true
       },
       {
-        tarefa:'Mais uma pra encher linguiça',
+        tarefa:'Mais uma então pra comemorar!',
         prioridade:3,
         concluida:false
       }
@@ -31,5 +30,6 @@ export class ListaDeTarefasComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
 }
